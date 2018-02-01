@@ -6,7 +6,7 @@
       <div class="card-login" style="width: 18rem;">
         <div class="avatar"></div>
         <div class="avatar2"></div>
-        <form class="align-cen">
+        <form (ngSubmit)="onSubmit()" class="align-cen" #loginForm="ngForm">
           <br>
           <label for="inputEmail" class="sr-only">Email address</label>
           <div class="input-group pass-group">
@@ -14,18 +14,18 @@
               <i class="fa fa-user" aria-hidden="true"></i>
             </span>
             <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+" name="email" minlength="10" required 
-              id="inputEmail" class="form-control align-cen" placeholder="Email address" autofocus="">
+              id="inputEmail"  [(ngModel)]="credentials.username" class="form-control bold align-cen" placeholder="Email address" autofocus="">
           </div>
           <label for="inputPassword" class="sr-only">Password</label>
           <div class="input-group">
             <span class="input-group-addon">
               <i class="fa fa-unlock-alt" aria-hidden="true"></i>
             </span>
-            <input type="password"  name="password" id="inputPassword" class="form-control align-cen" placeholder="Password"
-              required="">
+            <input type="password"  [(ngModel)]="credentials.password" name="password" id="inputPassword" class="form-control bold align-cen" placeholder="Password"
+              required>
           </div>
           
-          <input  value="Sign in" class="btn btn-lg btn-primary btn-block" type="submit">
+          <input [disabled]="!loginForm.valid" value="log in" class="btn btn-lg bold btn-primary btn-block" type="submit">
           <br>
           </form>
       </div>

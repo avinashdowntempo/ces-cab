@@ -1,5 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+.row {  
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .align-cen{
+    text-align: center; 
     text-align: -moz-center;
     text-align: -webkit-center;  
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 50%;
+    background-color: aliceblue;
+    top: 50px;
+    left: calc(50% - 60px);
+    z-index: 100;
+}
+.avatar2{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: aliceblue;
+    top: 50px;
+    left: calc(50% - 60px);
+    box-shadow: 0px 0px 7px #a5a5a5;
+    z-index: -1;
 }

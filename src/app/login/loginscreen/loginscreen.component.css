@@ -30,44 +30,26 @@ input{
     border: 1px solid #fff3d2;
     margin-left: auto;
     margin-right: auto;
-    color: #d6d5d4;
-   /* text-align: -moz-center;
-    text-align: -webkit-center;*/
-    font-weight: bold;
+    color: #494949;    
 }
+
 #inputPassword{
     margin-bottom: 50px;
 }
+
+#inputPassword::placeholder, #inputEmail::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d6d5d4; 
+    opacity: 1; /* Firefox */
+}
+
 .input-group{
     padding-top: 50px;
 }
 
-.avatar{
-    width: 120px;
-    height: 120px;
-    position: relative;
-    border-radius: 50%;
-    background-color: aliceblue;
-    top: 50px;
-    left: calc(50% - 60px);
-    z-index: 100;
-}
-.avatar2{
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: aliceblue;
-    top: 50px;
-    left: calc(50% - 60px);
-    box-shadow: 0px 0px 7px #a5a5a5;
-    z-index: -1;
-}
+
 form{
     background: #ffffff;
     background-color: #ffffff;
-    /*text-align: -moz-center;
-    text-align: -webkit-center;*/
     border-radius: 20px;
     box-shadow: 0px 0px 7px #a5a5a5;
 }
@@ -82,13 +64,7 @@ form{
     border-color: white;
     border-radius: 30px;
     width:100px !important;
-}
-
-
-
-.row {  
-    margin-right: 0px; 
-    margin-left: 0px; 
+    margin: 0 auto;
 }
 
 img{

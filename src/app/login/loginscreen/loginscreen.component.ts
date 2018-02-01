@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginscreenComponent implements OnInit {
 
+  credentials = {username: undefined, password: undefined};
   constructor() { }
 
   ngOnInit() {
   }
-
+  onSubmit() {
+    window.alert(this.credentials.username + ' ' + this.credentials.password);
+  }
 }
