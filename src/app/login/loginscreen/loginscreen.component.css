@@ -11,8 +11,8 @@
 }
 .card-login{
     position: relative;
-    top: calc(50% - 211px);
-    bottom: 0;
+    top: calc(50% - 245px);
+    bottom: 0; 
     left: 0;
     right: 0;
     margin: auto;
