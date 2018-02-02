@@ -2,6 +2,31 @@
     background: #fAA118;
     color: white;
     box-shadow: 0px 0px 8px #a5a5a5;
+    min-height: 450px;
+    min-block-size: 50vw;
+    height: 100%;
+    width: 100%;
+}
+.img-responsive{
+    /*position: relative;
+    top: calc(50% - 185px);
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    margin: auto;*/
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.logo-screen{
+    text-align: center;
+    min-block-size: 50vw;
+    padding: 2px;
 }
 .row{
     height: 100vh;
@@ -10,14 +35,19 @@
     min-height: 400px;
 }
 .card-login{
-    position: relative;
+   /* position: relative;
     top: calc(50% - 245px);
     bottom: 0; 
     left: 0;
     right: 0;
-    margin: auto;
-    min-width: 200px;
     padding-bottom: 50px;
+    margin: auto;*/
+    min-width: 200px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 0;
 }
 input{
@@ -30,22 +60,19 @@ input{
     border: 1px solid #fff3d2;
     margin-left: auto;
     margin-right: auto;
-    color: #494949;    
+    color: #494949;  
+    margin-top: -30px;  
 }
 
 #inputPassword{
     margin-bottom: 50px;
+    margin-top: 30px; 
 }
 
 #inputPassword::placeholder, #inputEmail::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #d6d5d4; 
     opacity: 1; /* Firefox */
 }
-
-.input-group{
-    padding-top: 50px;
-}
-
 
 form{
     background: #ffffff;
