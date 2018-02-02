@@ -8,13 +8,6 @@
     width: 100%;
 }
 .img-responsive{
-    /*position: relative;
-    top: calc(50% - 185px);
-    bottom: 0; 
-    left: 0;
-    right: 0;
-    margin: auto;*/
-
     margin: 0;
     position: absolute;
     top: 50%;
@@ -33,15 +26,9 @@
     width: 100%;
     position: relative;
     min-height: 400px;
+    max-width: 100%;
 }
 .card-login{
-   /* position: relative;
-    top: calc(50% - 245px);
-    bottom: 0; 
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-    margin: auto;*/
     min-width: 200px;
     margin: 0;
     position: absolute;
@@ -69,10 +56,11 @@ input{
     margin-top: 30px; 
 }
 
-#inputPassword::placeholder, #inputEmail::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+#inputPassword::placeholder, #inputEmail::placeholder { 
     color: #d6d5d4; 
-    opacity: 1; /* Firefox */
+    opacity: 1;
 }
+
 
 form{
     background: #ffffff;
